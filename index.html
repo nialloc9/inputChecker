@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--CUSTOM CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+    <!-- INPUT CHECKER -->
+    <script src="js/inputChecker.js"></script>
+    <!-- CUSTOM JS -->
+    <script>
+        $(document).ready(function(){
+            inputChecker('required', 'button', 'info', 'Please fill in all fields.', 'Awesome, all done.');
+        });
+    </script>
+</head>
+<body>
+<form>
+    Name:       <input type="text" class="required"/>
+    Address:    <input type="text" class="required"/>
+                <p id="info"></p><br>
+                <input type="button" id="button" value="Submit" disabled/>
+</form>
+
+
+</body>
+</html>
