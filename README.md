@@ -12,3 +12,12 @@ If they have it enables a button and gives a message. If not it disables and giv
 5. Add an area with suitable id for your info message to appear. e.g <p id='info'></p>
 6. Call inputChecker() function and give suitable arguements. eg inputChecker('required, 'button, 'info', ''This is my error message, 'This is my success message')
 7. Leave error message and success messages blank if you don't want to use them.
+
+# Example
+                $(document).ready(function(){
+                            inputChecker('required', 'button', 'info', 'Please fill in all fields.', 'Awesome, all done.');
+                        });
+
+
+# NB
+Also returns a boolean value of true or false so we can use an if statement to check before we continue to other code.
