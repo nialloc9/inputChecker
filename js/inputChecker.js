@@ -6,7 +6,7 @@ function inputChecker(className, btnId, messageAreaId, messageError, messageSucc
     //on key down
     $(c).keydown(function(){
         var infoArea = '#' + messageAreaId;
-
+        var result = false;
 
 
         $(c).on('change', function () {
@@ -63,10 +63,13 @@ function inputChecker(className, btnId, messageAreaId, messageError, messageSucc
                 }else{
 
                 }
+
+                result = true;
             }
 
             //render info
             $(infoArea).text(message);
+            return result;
         });
     });
 }
