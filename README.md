@@ -1,5 +1,5 @@
 # inputChecker
-This is an input checker that uses jQuery. It was created with re-usability as it's main feature.
+This is an input validator that uses jQuery. It was created with re-usability as it's main feature.
 Simply add the javascript file into your project and call the function. 
 It checks the inputs and checks the user has submitted all the required data. 
 If they have it enables a button and gives a message. If not it disables and gives a different message.
